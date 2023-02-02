@@ -12,7 +12,7 @@ It is written in the style of a Cloud Function so that it can be easily used in 
 
 1. [Create a Cloud Storage Bucket](https://cloud.google.com/storage/docs/creating-buckets) where you will store media files to transcribe
 2. [Enable the appropriate APIs](https://cloud.google.com/endpoints/docs/openapi/enable-api) (Speech to Text and NLP)
-3. [Create a service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) that has the Cloud Speech Administrator role in the project
+3. [Create a service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) that has the Cloud Speech Administrator, BigQuery Data Editor, and Service Usage Consumer roles in the project
 4. Grant the service account Storage Legacy Object Reader permission on the storage bucket created in step 1
 5. Create a BigQuery table using [./stt_results.sql](./stt_results.sql)
 
